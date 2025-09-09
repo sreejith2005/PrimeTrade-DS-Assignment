@@ -1,0 +1,24 @@
+Data Science Report: Trader Behavior vs. Market Sentiment
+
+1.  Objective
+    This report analyzes the relationship between trader behavior on the provided trading platform and the broader Bitcoin market sentiment, as defined by the Fear & Greed Index. The goal was to identify patterns in profitability and trading volume that correlate with periods of 'Fear' versus 'Greed'.
+
+2.  Methodology
+    Two datasets were used: historical trader data and the Fear & Greed Index. The datasets were merged on their common 'date' field. The analysis focused on two key trading metrics available in the data:
+    -   Profitability: Measured by the 'Closed PnL' column.
+    -   Volume: Measured by multiplying 'Execution Price' and 'Size Tokens'.
+
+    Note: The 'leverage' column mentioned in the assignment brief was not present in the provided dataset, so analysis on trader risk-taking could not be performed.
+
+3.  Key Findings & Insights
+
+    Insight 1: Profitability is Higher in Fearful Markets
+    The analysis reveals a striking trend: traders achieved a significant positive total Profit and Loss (PnL) of approximately $146,000 during periods of market 'Fear'. Conversely, during periods of market 'Greed', traders experienced a collective net loss of approximately -$164,500. This suggests that trading strategies employed during fearful periods were more effective, or that 'Greed' periods may lead to more speculative, less successful trading.
+
+    Insight 2: Trading Volume Surges during Greed
+    Total trading volume was substantially higher during periods of 'Greed', reaching over $237 million compared to just $96 million during periods of 'Fear'. This aligns with the intuitive understanding that positive market sentiment and rising prices attract significantly more market participation and activity.
+
+4.  Conclusion & Strategic Implications
+    The data paints a clear picture of two distinct trading environments. 'Greed' periods are characterized by high volume and, in this dataset, negative overall profitability. 'Fear' periods see lower participation but are associated with positive net profits.
+
+    A potential signal for a trading strategy could be to exercise increased discipline during 'Greed' phases when market hype is high. The most profitable opportunities in this dataset were found when overall market sentiment was fearful, suggesting that calculated entries during periods of uncertainty can be highly effective.
